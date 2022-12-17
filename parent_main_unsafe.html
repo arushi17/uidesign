@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* The device with borders */
+.smartphone {
+  position: relative;
+  width: 340px;
+  height: 580px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+/* The camera on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The home button circle on the bottom of the device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen/content of the device */
+.content {
+  position: relative;
+  width: 340px;
+  height: 540px;
+  margin: 57px 0px 0px 0px;
+}
+
+
+/* The menu bar on the top of the screen */
+.menu {
+  display: block;
+  width: 340px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -4%);
+  background: rgba(255,0,0,0.8);
+}
+
+/* The menu text header on the screen */
+.header {
+  align-items: center;  
+  font-family: Verdana;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* The menu header icon on the screen */
+.switch {
+  align-items: left;
+  transform: translate(4%, -90%);
+}
+
+/* The mode bar at the bottom of the screen */
+.mode {
+  display: block;
+  width: 175px;
+  height: 55px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 920%);
+  border-radius: 25%;
+  background-color: #ffffff;
+  z-index: -4;
+}
+
+/* The night mode */
+.night {
+  position: absolute;
+  transform: translate(6%, 25%);
+  border: none;
+}
+
+/* The day mode */
+.day {
+  position: absolute;
+  align-items: center;
+  transform: translate(43%, 35%);
+}
+
+/* The add mode */
+.add{
+  position: absolute;
+  align-items: right;
+  transform: translate(78%, 42%);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="smartphone">
+ <div class="menu">
+    <div class ="header">
+      <br><strong>UNSAFE ZONE</strong></br>
+      <span>Precise Location ON</span>
+    </div>
+    <div class ="switch"><img src="https://assets.stickpng.com/images/588a6507d06f6719692a2d15.png" style="width:8%;border:none;height:9%"/></div>
+ </div>
+ <div class="mode">
+   <div class="night"><img src="https://icons-for-free.com/iconfiles/png/512/evening+moon+night+icon-1320196560264036207.png" style="z-index:3;width:20%;border:none;height:20%"/></div>
+   <div class="day"><img src="https://static.vecteezy.com/system/resources/previews/009/266/318/non_2x/sun-icon-design-free-png.png" style="z-index:3;width:18%;border:none;height:18%"/></div>
+   <div class="add"><img src="https://www.freeiconspng.com/thumbs/add-icon-png/add-icon--line-iconset--iconsmind-29.png" style="z-index:3;width:15%;border:none;height:15%"/></div>
+ </div>
+ <div class="content"><iframe src="unsafe zone map.png" style="position:relative;z-index:-5;width:100%;border:none;height:100%"/></div>
+</div>
+
+
+</body>
+</html>
