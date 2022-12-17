@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* The device with borders */
+.smartphone {
+  position: relative;
+  width: 340px;
+  height: 580px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+/* The camera on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The home button circle on the bottom of the device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen/content of the device */
+.content {
+  position: relative;
+  width: 340px;
+  height: 540px;
+  margin: 57px 0px 0px 0px;
+}
+
+/* The menu bar on the top of the screen */
+.menu {
+  display: block;
+  width: 340px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -4%);
+  background: rgba(1,1,1,0.2);
+}
+
+/* The menu text header on the screen */
+.header {
+  align-items: center;  
+  font-family: Verdana;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* The menu header icon on the screen */
+.switch {
+  align-items: left;
+  transform: translate(4%, -40%);
+}
+
+/* The new div */
+.new {
+  display: block;
+  width: 270px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 13%);
+  border-radius: 10%;
+  background-color: rgba(1,1,1,0.7);
+  z-index: -4;
+  font-family: Verdana;
+  font-size: 13px;
+  align-items: center;
+  color: white;
+  padding: 0px 0px 0px 20px;
+}
+
+/* The viewed div */
+.viewed {
+  display: block;
+  width: 270px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 920%);
+  border-radius: 10%;
+  background-color: rgba(1,1,1,0.7);
+  z-index: -4;
+  font-family: Verdana;
+  font-size: 13px;
+  align-text: left;
+  color: white;
+  padding: 0px 0px 0px 20px;
+}
+
+/* sample new alert */
+.samplenew {
+  display: block;
+  width: 270px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  border-radius: 10%;
+  background-color: rgb(190, 216, 230, 0.5);
+  z-index: -4;
+  font-family: Verdana;
+  font-size: 13px;
+  text-align: left;
+  padding: 0px 0px 0px 20px;
+}
+
+/* sample new alert */
+.sampleviewed {
+  display: block;
+  width: 270px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 700%);
+  border-radius: 7%;
+  background-color: rgb(1,1,1,0.07);
+  z-index: -4;
+  font-family: Verdana;
+  font-size: 13px;
+  text-align: left;
+  padding: 0px 10px 0px 10px;
+}
+
+/* sample new alert */
+.samplenewsummary {
+  display: block;
+  width: 270px;
+  height: 140px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  border-radius: 7%;
+  background-color: rgb(1,1,1,0.07);
+  z-index: -4;
+  font-family: Verdana;
+  font-size: 13px;
+  text-align: left;
+  padding: 0px 10px 0px 10px;
+}
+
+/* violationsummary */
+.violationsummary {
+  display: block;
+  width: 150px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 570%);
+  border-radius: 8%;
+  background-color: white;
+  border: 1px solid;
+  border-color: black;
+  z-index: -4;
+  font-family: Verdana;
+  font-size: 10px;
+  text-align: left;
+  padding: 0px 0px 0px 20px;
+}
+
+.alerticon {
+  position: absolute;
+  transform: translate(15%, 75%);
+}
+
+.clickicon1 {
+  transform: translate(80%, 410%);
+}
+
+.clickicon2 {
+  transform: translate(80%, 1575%);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="smartphone">
+ <div class="menu">
+    <div class ="header">
+      <br><strong>ALERTS</strong></br>
+    </div>
+    <div class ="switch"><img src="https://assets.stickpng.com/images/588a6507d06f6719692a2d15.png" style="width:8%;border:none;height:9%"/></div>
+  <div class="new"><br><strong> &nbsp &nbsp &nbsp NEW</strong></br></div>
+  <div class="viewed"><br><strong>VIEWED</strong></br></div>
+  <div class="samplenew"><br>Your child was in an unsafe zone today at 12:00 PM.</br></div>
+ <div class="samplenewsummary"><br>Your child entered an unsafe zone today at 12:00 PM. Their location was viewable on the map.</br></div>
+ <div class="violationsummary"><br><strong>View Violation Summary</strong></br></div>
+  <div class="sampleviewed"><br>Your precise location request was accepted.</br></div>
+  <div class="alerticon"><img src="https://www.freeiconspng.com/thumbs/alert-icon/alert-icon-red-11.png" style="width:8%;border:none;height:8%"/></div>
+  <div class="clickicon1"><img src="https://cdn-icons-png.flaticon.com/512/60/60995.png" style="width:6%;border:none;height:8%"/></div>
+  <div class="clickicon2"><img src="https://flyclipart.com/thumb2/arrow-caret-next-right-triangle-icon-241817.png" style="width:10%;border:none;height:10%"/></div>
+</div>
+
+</body>
+</html>
