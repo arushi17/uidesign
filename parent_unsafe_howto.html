@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* The device with borders */
+.smartphone {
+  position: relative;
+  width: 340px;
+  height: 580px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+/* The camera on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The home button circle on the bottom of the device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen/content of the device */
+.content {
+  position: relative;
+  width: 340px;
+  height: 540px;
+  margin: 57px 0px 0px 0px;
+}
+
+/* The menu bar on the top of the screen */
+.menu {
+  display: block;
+  width: 340px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -4%);
+  background: rgb(100,100,255, 0.2);
+}
+
+/* The menu text header on the screen */
+.header {
+  align-items: center;  
+  font-family: Verdana;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* The menu header icon on the screen */
+.switch {
+  align-items: left;
+  transform: translate(6%, -70%);
+}
+
+/* The white content box */
+.howto {
+  display: block;
+  width: 280px;
+  height: 375px;
+  border: 1px solid;
+  border-color: black;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 30%);
+  border-radius: 10%;
+  background-color: #ffffff;
+  z-index: -4;
+  align-items: center;  
+  font-family: Verdana;
+  font-size: 15px;
+  text-align: center;
+}
+
+.image {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 190%);
+  background-color: #ffffff;
+  z-index: -4;
+  align-items: center;  
+}
+
+/* The next text */
+.nexttext {
+  position: absolute;
+  transform: translate(675%, 1200%);
+  font-family: Verdana;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* The next arrow */
+.nextarrow {
+  position: absolute;
+  transform: translate(6%, 25%);
+  border: none;
+}
+
+/* The search icon */
+.search{
+  position: absolute;
+  align-items: right;
+  transform: translate(78%, 42%);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="smartphone">
+ <div class="menu">
+    <div class ="header">
+      <br><strong>EDIT MODE</strong></br>
+    </div>
+    <div class ="switch"><img src="https://assets.stickpng.com/images/588a6507d06f6719692a2d15.png" style="width:8%;border:none;height:9%"/></div>
+ </div>
+ <div class="howto"><br><strong>How To Map Unsafe Zones</strong></br><br></br><span>Safe Zones appear red on the map and you will be alerted if your child enters the area.</div>
+  <div class="image"><img src="unsafe zone.png"/></div>
+ <div class="nexttext"><br>Next</br></div>
+
+ <div class="content"><iframe src="safe zone map.png" style="position:relative;z-index:-5;width:100%;border:none;height:100%"/></div>
+</div>
+
+</body>
+</html>
