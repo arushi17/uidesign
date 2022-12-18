@@ -5,8 +5,10 @@ This README outlines how to run our code.
 - We chose to use screenshots/images of maps, as we were building static pages without any real backend implementation.
 - The pngs, specifically 1) child safe, 2) neutral zone map, 3) safe zone map, and 4) unsafe zone map have been resized using the
 preview file adjust size feature (to 75%). 
-- The remaining pngs, i.e. 1) unsafe zone and 2) new unsafe zone were also resized to 60%. 
+- The remaining pngs, i.e. 1) unsafe zone (to 65%) and 2) new unsafe zone (to 60%). 
+- Any remaining pngs are sourced from the Internet and can be accessed by any computer.
 
+To run and view the html files, all of the files from the github must be downloaded to the same folder on a local desktop. Then, they should be easily viewable.
 
 
 Overview of code implementation:
